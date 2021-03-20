@@ -62,13 +62,7 @@ define(['jquery', 'bootstrap', 'modernizr'], function () {
         triggers: function () {
 
             $(document).ready(function() {
-                /* Inicio Função Menu Contato */
-                $('.bt-contact').click(function(){ 
-                    $('.page_contact').addClass('active-contact');
-                    $('.menu-contact').addClass('act-pos-cont');
-                    $('.menu-trigger').addClass('act-pos-trigger');
-                });
-                /* Fim Função Menu Contato */
+               
             }); 
            
         },
@@ -141,20 +135,29 @@ define(['jquery', 'bootstrap', 'modernizr'], function () {
                     });
                     /* Fim Função Menu Trigger Animado */
 
-                    /* Inicio Função Menu Trigger Animado */
+                    /* Inicio Função Menu Contato */
+                    $('.bt-contact, .bt-footer-contact').click(function(){ 
+                        $('.page_contact').addClass('active-contact');
+                        $('.menu-contact').addClass('act-pos-cont');
+                        $('.menu-trigger').addClass('act-pos-trigger');
+                        close_menu();
+                        $('.line-menu').removeClass('active-trigger');
+                        $('.menu-trigger').addClass('reverse-trigger');
+                        $('.line-menu').addClass('reverse-trigger');
+                    });
+                    /* Fim Função Menu Contato */
+
+                    /* Inicio Função Menu Contato Fechando */
                     $('.menu-contact').click(function(){
                         $('body').toggleClass('overflow');
                         $('.menu_full').removeClass('active-menufull');
                         $('.page_contact').removeClass('active-contact');
                         $('.menu-contact').removeClass('act-pos-cont');
                         $('.menu-trigger').removeClass('act-pos-trigger');
-                        close_menu();
                         $('.menu-trigger').removeClass('active-trigger');
-                        $('.line-menu').removeClass('active-trigger');
-                        $('.menu-trigger').addClass('reverse-trigger');
-                        $('.line-menu').addClass('reverse-trigger');
+                        
                     });
-
+                    /* Fim Função Menu Contato Fechando */
                 });
             });
         },
