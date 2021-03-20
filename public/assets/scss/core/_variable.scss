@@ -1,0 +1,99 @@
+// Text
+$font: 'LatoRegular';
+$font-x-small: 'LatoThin';
+$font-small: 'LatoLight';
+$font-bold: 'LatoBold';
+$font-black: 'LatoBlack';
+$heading-font-family: $font;
+$base-font-size: 16px;
+$base-letter-spacing: 1px;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1;
+
+// Other Sizes
+$base-margin: 140px;
+$base-padding: 3vw;
+$base-spacing: 20px;
+$header-height: 110px;
+$header-height-mobile: 80px;
+$small-spacing: $base-spacing / 4;
+
+// Colors
+$color-primary: rgba(0, 154, 210, 1);
+$color-secondary: rgba(0, 178, 152, 1);
+$color-tertiary: rgba(255, 148, 54, 1);
+$color-quateary: rgba(144, 91, 161, 1);
+$color-quinary: rgba(51, 51, 51, 1);
+$color-sexary: rgba(240, 73, 35, 1);
+$color-septenary:rgba(236, 230, 69, 1);
+
+
+// Generic Colors
+$black: rgba(0, 0, 0, 1);
+$black-transparent: rgba(0, 0, 0, 0.7);
+$black-transparent2: rgba(0, 0, 0, 0.9);
+$gray: rgba(40, 40, 40, 1);
+$gray-dark: rgba(54, 61, 64, 1);
+$gray-dark2: rgba(115, 115, 115, 1);
+$gray-light: rgba(240, 240, 225, 1);
+$gray-light2: rgba(189, 185, 185, 1);
+$gray-medium: rgba(85, 94, 100, 1);
+$gray-medium2: rgba(172, 172, 172, 1);
+$white: rgba(255, 255, 255, 1);
+
+// Font Color
+$base-font-color: $gray-dark2;
+
+// Border
+$base-border-color: $white;
+$base-border: 1px solid $base-border-color;
+
+$base-border-color2: $color-secondary;
+$base-border2: 1px solid $base-border-color2;
+
+$base-border-color3: $color-tertiary;
+$base-border3: 1px solid $base-border-color3;
+
+$base-border-color4: $color-primary;
+$base-border4: 1px solid $base-border-color4;
+
+$base-border-color-form: darken($color-primary,15%);
+$base-border-form: 1px solid $base-border-color-form;
+
+$base-border-color-form2: darken($color-primary,5%);
+$base-border-form2: 1px solid $base-border-color-form2;
+
+$base-border-ampler: $color-secondary;
+$ampler-border: 8px solid $base-border-ampler;
+
+// Buttons
+$all-buttons: ('button', 'input[type="button"]', 'input[type="reset"]', 'input[type="submit"]');
+$button-padding: 30px;
+
+// Forms
+$all-text-inputs: ('input[type="text"]', 'input[type="password"]', 'select[multiple="multiple"]', 'textarea');
+$form-box-shadow: inset 0 0 0 1px $base-border-color;
+$form-box-shadow-focus: inset 0 0 0 1px $color-primary;
+$form-box-shadow2: inset 0 0 0 1px $gray-light;
+$form-box-shadow-focus2: inset 0 0 0 1px $gray-dark2;
+$input-margin: 5px;
+$input-padding: 20px;
+$input-placeholder-color: $gray-medium2;
+
+// Animations
+$base-duration: 800ms;
+$modal-duration: 800ms;
+$base-timing: ease-in-out;
+
+// Media Screen
+$mobile: 320px;
+$ms-small: 540px;
+$ms-x-small: 599px;
+$ms-x-mid: 760px;
+$ms-mid: 980px;
+$ms-large: 1200px;
+$ms-note: 1300px;
+$ms-x-large: 1600px;
+$ms-hd-full: 1700px;

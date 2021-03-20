@@ -1,0 +1,80 @@
+.holder {
+  padding: 20px 0 80px 0;
+  border-top: 1px solid $color-sexary;
+
+  a {
+    @include calc-rem(22px);
+    cursor: pointer;
+    padding: 0 13px;
+    color: $color-quateary;
+    border-right: 1px solid $color-quateary;
+    font-family: $font-small;
+    text-decoration: none;
+
+    @include responsive($ms-mid) {
+        padding: 0 15px;
+    };
+
+    &:first-child,
+    &:last-child {
+       border-right: 0;
+    }
+
+    &:first-child {
+       padding: 0 15px 0 0;
+    }
+
+    &:last-child {
+       padding: 0 0 0 15px;
+    }
+
+    &:hover {
+      background-color: #222;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    &.jp-previous {
+      margin-right: 0;
+      width: 30%;
+
+      @include responsive($ms-mid) {
+          margin-right: 15px;
+          width: auto; 
+      };
+    }
+
+    &.jp-next {
+      margin-left: 0;
+      width: 30%;
+
+      @include responsive($ms-mid) {
+          margin-left: 15px;
+          width: auto;
+      };
+    }
+
+    &.jp-current {
+      color: #FF4242;
+      font-weight: bold;
+    }
+  }
+}
+
+a.jp-current:hover {
+  color: #FF4242;
+  font-weight: bold;
+}
+
+.holder a.jp-disabled, a.jp-disabled:hover {
+  color: #bbb;
+}
+
+.holder a.jp-current, a.jp-current:hover, .holder a.jp-disabled, a.jp-disabled:hover {
+  cursor: default;
+  background: none;
+}
+
+.holder span {
+  margin: 0 5px;
+}

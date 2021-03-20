@@ -1,0 +1,128 @@
+.titulo-ext {
+    h1 {
+        position: relative;
+        color: $color-primary;
+        span {
+            &:nth-child(even) {
+                @include calc-rem(150px);
+                line-height: 60%;
+                @include responsive($ms-large) {
+                    @include calc-rem(80px);
+                }
+                @include responsive($ms-x-large) {
+                    @include calc-rem(130px);
+                }
+            }
+            &:nth-child(odd) {
+                @include calc-rem(80px);
+                -webkit-text-stroke: 1px $color-primary;
+                -webkit-text-fill-color: transparent;
+                @include responsive($ms-large) {
+                    @include calc-rem(150px);
+                }
+                @include responsive($ms-x-large) {
+                    @include calc-rem(220px);
+                }
+            }
+        }
+        p {
+            @include calc-rem(35px);
+            padding: 25px 30px 25px 0;
+            line-height: 120%;
+            font-family: $font-bold;
+        }
+        &.black {
+            left: -60px;
+        }
+    }
+}
+
+.container-cont-int {
+    h2,
+    p {
+        color: $color-primary;
+    }
+    h2 {
+        @include calc-rem(75px);
+        font-family: $font-small;
+        padding: 0 0 35px 0;
+    }
+    p {
+        @include calc-rem(50px);
+        padding: 25px 0;
+        line-height: 130%;
+        font-family: $font-small;
+    }
+}
+
+.cont-experience {
+    padding: 0 0 100px 0;
+    ul {
+        li {
+            margin: 0;
+            padding: 0;
+            &.espaco {
+                margin: 0 0 40px 0px;
+                @include responsive($ms-large) {
+                    margin: 40px 0px
+                }
+                h2 {
+                    padding: 0;
+                    margin: 0;
+                }
+                div {
+                    margin: 0;
+                    padding: 0;
+                }
+                .company {
+                    padding: 0 0 20px 0;
+                    @include responsive($ms-large) {
+                        padding: 0 40px 0 0;
+                    }
+                    h3,
+                    h4 {
+                        text-transform: uppercase;
+                    }
+                    h3 {
+                        @include calc-rem(35px);
+                        font-family: $font-small;
+                        color: $color-primary;
+                    }
+                    h4 {
+                        @include calc-rem(25px);
+                        font-family: $font-bold;
+                        color: $gray-light2;
+                        padding: 10px 0;
+                    }
+                }
+                .position {
+                    padding: 0 0 40px 0;
+                    border-left: none;
+                    border-bottom: 1px solid $gray-light;
+                    @include responsive($ms-large) {
+                        padding: 0 0 0 80px;
+                        border-bottom: none;
+                        border-left: 1px solid $gray-light;
+                    }
+                    h3 {
+                        font-family: $font-bold;
+                        color: $color-primary;
+                        @include calc-rem(35px);
+                    }
+                    a {
+                        font-family: $font-bold;
+                        color: $black;
+                        padding: 10px 0;
+                        color: $black;
+                        text-decoration: none;
+                        @include calc-rem(25px);
+                        &:hover {
+                            color: $black;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

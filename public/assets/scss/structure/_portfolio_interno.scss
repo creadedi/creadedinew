@@ -1,0 +1,596 @@
+.foto-apresent-portfolio {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: lighten($black, 20%);
+    top: 0;
+    left:0;
+    z-index: 3;
+    padding: 130px;
+
+    .cont-apresentacao,
+    .top-link {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .cont-apresentacao {
+        @include display-flex();
+        @include align-items();
+        @include justify-content();
+        top: 30px;
+        left: 40px;
+        overflow: hidden;
+        
+        .scroll-line {
+            @include animation-name(line);
+            @include animation-duration(2s);
+            @include animation-delay(1s);
+            @include animation-iteration-count(infinite);
+            height: 90px;
+            background-color: lighten($black, 80%);
+            display: block;
+            width: 2px;
+            position: relative;
+            top: -100px;
+        }
+
+        .details {
+            @include calc-rem(35px);
+            @include display-flex();
+            @include align-items(flex-start);
+            @include justify-content(flex-start);
+            @include flex-direction(column);
+            line-height: 120%;
+            color: lighten($black, 80%);
+            padding-left: 28px;
+            li {
+                font-family: $font-x-small;
+                &::first-child {
+                    font-family: $font-bold;
+                }
+            }
+        }
+
+        @include keyframes(line) {
+            0% {
+                top: -100px;
+            }
+            100% {
+                top: 100px;
+            }
+        }
+    }
+
+    .top-link {
+        display:table;
+        @include display-flex();
+        @include align-items();
+        @include justify-content();
+        bottom: 80px;
+        right: 120px;
+        cursor:pointer;
+
+        @include responsive($ms-large) {
+           
+        }
+ 
+        @include responsive($ms-x-large) {
+ 
+        }
+
+        p {
+            @include calc-rem(36px);
+            color: lighten($black, 80%);
+            padding-right: 5px;
+            margin: 0;
+            line-height: 110%;
+
+        }
+
+        .icone-port-cont {
+            width: 50px;
+            height: 40px;
+            position: relative;
+            display: block;
+            overflow: hidden;
+
+            svg {
+                fill: lighten($black, 80%);
+            }
+        }
+    }
+
+    .foto-topo-portfolio {
+        width: 100%;
+        height: 100%;
+        min-height: 70vh;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        
+        @include opacity (0.5);
+        @include transform(translateY(0));
+        @include responsive($ms-large) {
+            min-height: 70vh;
+        }
+        @include responsive($ms-x-large) {
+            min-height: 70vh;
+        }
+    }
+
+    h2 {
+        margin: 0 0 10px 0;
+        bottom: -1%;
+
+        @include responsive($ms-large) {
+            margin: 0 0 10px 0;
+            bottom: -1%;
+        }
+
+        @include responsive($ms-x-large) {
+            margin: 0 0 10px 0;
+        }
+    }
+}
+
+.portfolio {
+    .fundo-portfolio {
+        background-image: url(../images/main-bg.png);
+        background-size: 100%;
+        background-repeat: repeat-Y;
+    }
+    
+    p {
+        font-family: $font-x-small;
+        @include responsive($ms-large) {
+            @include calc-rem(35px);
+            line-height: 160%;
+        }
+
+        @include responsive($ms-x-large) {
+            @include calc-rem(60px);
+        }
+    }
+
+    .bloco-missao {
+        position: relative;
+        padding: 90px;
+        @include responsive($ms-large) {
+            padding: 30px;
+        }
+
+        @include responsive($ms-x-large) {
+            padding: 90px;
+        }
+
+        h2 {
+            font-family: $font-bold;
+            position: relative;
+            left: -260px;
+
+            @include responsive($ms-large) {
+                @include calc-rem(160px);
+                line-height: 130%;
+                left: -180px;
+            }
+   
+            @include responsive($ms-x-large) {
+                @include calc-rem(260px);
+            }
+        }
+
+        p {
+            color: $color-secondary;
+            padding: 0 30px;
+        }
+    }
+
+    .bloco-story,
+    .bloco-tech {
+        @include display-flex();
+        @include align-items();
+        @include justify-content();
+        span,
+        h2,
+        p {
+            position: relative;
+        }
+
+        span {
+            left: -120px;
+            @include responsive($ms-large) {
+                left: -40px;
+            }
+
+            @include responsive($ms-x-large) {
+                left: -20px;
+            }
+        
+        }
+
+        h2 {
+            @include calc-rem(160px);
+            font-family: $font-bold;
+            line-height: 60%;
+            @include responsive($ms-large) {
+                @include calc-rem(200px);
+                word-wrap: break-word;
+                line-height: 80%;
+            }
+            
+            @include responsive($ms-x-large) {
+                @include calc-rem(350px);
+            }
+        }
+
+        p {
+            font-family: $font-x-small;
+            @include responsive($ms-large) {
+                line-height: 160%;
+            }
+        }
+
+        .icone-section {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            display: block;
+            overflow: hidden;
+            top: 20px;
+            left: 45%;
+        }
+        
+    }
+
+    .bloco-story {
+        span {
+            @include calc-rem(30px);
+            text-transform: uppercase;
+            font-family: $font-bold;
+            color: $color-quateary;
+            display: table;
+            @include responsive($ms-large) {
+                top: -30px;
+            }
+            @include responsive($ms-x-large) {
+                top: -40px;
+            }
+        }
+
+        h2 {
+            left: -120px;
+            color: $color-quateary;
+            @include responsive($ms-large) {
+                width: 300px;
+                word-wrap: break-word;
+                line-height: 80%;
+                left: -40px;
+            }
+ 
+            @include responsive($ms-x-large) {
+                left: -20px;
+            }
+
+        }
+
+        h3 {
+            left: -120px;
+            color: $color-primary;
+            position: relative;
+            @include calc-rem(40px);
+            font-family: $font-bold;
+            line-height: 60%;
+            @include responsive($ms-large) {
+                @include calc-rem(80px);
+                width: 300px;
+                word-wrap: break-word;
+                line-height: 80%;
+                left: -40px;
+            }
+
+            @include responsive($ms-note) {
+                @include calc-rem(160px);
+                width: 350px;
+            }
+
+            @include responsive($ms-x-large) {
+                left: -20px;
+            }
+
+        }
+
+        p {
+            color: $color-secondary;
+            
+            @include responsive($ms-large) {
+                @include calc-rem(35px);
+                padding: 30px;
+            }
+
+            @include responsive($ms-note) {
+                @include calc-rem(40px);
+            }
+
+            &.p-int {
+                @include responsive($ms-large) {
+                    @include calc-rem(20px);
+                }
+                @include responsive($ms-note) {
+                    @include calc-rem(25px);
+                }
+
+            }
+        }
+
+        .icone-section {
+            svg {
+                fill: $color-quateary;
+            }
+        }
+
+    }
+
+    .bloco-tech {
+        @include flex-direction(column);
+        @include responsive($ms-large) {
+            width: 800px;
+        }
+
+        span {
+            @include calc-rem(30px);
+            text-transform: uppercase;
+            font-family: $font-bold;
+            color: $white;
+            display: table;
+            @include responsive($ms-large) {
+                top: -30px;
+            }
+
+            @include responsive($ms-x-large) {
+                top: -40px;
+            }
+        }
+
+        h2 {
+            color: $white;
+            text-align: center;
+        }
+
+        h4 {
+            font-family: $font-bold;
+            padding: 80px 30px 10px 30px;
+        }
+
+        p {
+            padding: 50px;
+            @include responsive($ms-large) {
+                padding: 30px;
+            }
+        }
+
+        p,
+        h4 {
+            color: $white;
+            @include responsive($ms-large) {
+                @include calc-rem(24px);
+            }
+
+            @include responsive($ms-x-large) {
+                @include calc-rem(28px);
+            }
+
+        }
+
+        .icone-section {
+            svg {
+                fill: $white;
+            }
+        }
+    }
+
+    .carousel {
+        .fundo_imagem_port {
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+
+
+.nav-port {
+    @include display-flex();
+    @include align-items();
+    @include justify-content();
+    width: 100%;
+    height: 1px;
+    position: fixed;
+    z-index: 60;
+    bottom: 0;
+    .segura_info_tra_port {
+        width: 100%;
+        height: 1px;
+        bottom: 55px;
+        position: relative;
+        cursor: pointer;
+        .bt_acess_trabalho {
+            @include calc-rem(22px);
+            width: 230px;
+            height: 56px;
+            position: relative;
+            margin: 0 auto;
+            background: url(../images/svg/bt_acess.svg) no-repeat center top;
+            font-family: $font-bold;
+            color: $white;
+            .text_acess {
+                padding: 8% 0 8% 30%;
+            }
+        }
+    }
+    .segura_nav_port {
+        position: relative;
+        bottom: calc(50vh + 20px);
+        &:hover {
+            text-decoration: none;
+        }
+        &.nav_left {
+            left: calc(2vw - 210px);
+        }
+        &.nav_right {
+            right: calc(2vw - 210px);
+        }
+        .bt_nav_port {
+            @include calc-rem(22px);
+            width: 220px;
+            height: 60px;
+            position: relative;
+            cursor: pointer;
+            display: block;
+            font-family: $font-bold;
+            color: $white;
+            text-decoration: none;
+            &.bt_right,
+            &.bt_left {
+                @include transition(all $base-duration $base-timing);
+                @include display-flex();
+                @include align-items();
+                @include justify-content();
+            }
+            &.bt_right {
+                background: url(../images/svg/bt_nav_right.svg) no-repeat left top;
+                &:hover {
+                    @include transform(translate(-170px, 0px));
+                }
+            }
+            &.bt_left {
+                background: url(../images/svg/bt_nav_left.svg) no-repeat right top;
+                &:hover {
+                    @include transform(translate(170px, 0px));
+                }
+            }
+        }
+    }
+}
+
+.contato-portfolio {
+    width: 270px;
+    @include display-flex();
+    @include align-items();
+    @include justify-content(flex-start);
+    top: 90%;
+    left: 2.2%;
+    z-index: 60;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+    @include responsive($ms-large) {
+        top: 88%;
+        left: 3.2%;
+        position: fixed;
+    }
+
+    @include responsive($ms-x-large) {
+        top: 90%;
+        left: 2.2%;
+    }
+    p {
+        @include calc-rem(42px);
+        color: $color-quateary;
+        padding-right: 5px;
+        margin: 0;
+        line-height: 110%;
+        width: 200px;
+        @include responsive($ms-large) {
+            @include calc-rem(36px);
+        }
+        @include responsive($ms-x-large) {
+            @include calc-rem(42px);
+        }
+    }
+    .icone-port-cont {
+        width: 56px;
+        height: 56px;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        svg {
+            fill: $color-quateary;
+        }
+    }
+}
+
+.portfolio-interno {
+    .fundo-port {
+        padding-top: 20%;
+        .fundo-base-port {
+            background-image: url(../images/main-bg.png);
+            background-size: 100%;
+            background-repeat: repeat-Y;
+        }
+    }
+    h1,
+    .cont-apresentacao,
+    .top-link {
+        @include responsive($ms-large) {
+            position: absolute;
+        }
+    }
+    h1 {
+        @include calc-rem(320px);
+        // -webkit-text-stroke: 4px $color-secondary;
+        // -webkit-text-fill-color: transparent;
+        font-family: $font-bold;
+        color: lighten($black, 80%);
+        left: 15%;
+        bottom: -8%;
+        @include responsive($ms-large) {
+            @include calc-rem(390px);
+            left: 24%;
+            bottom: 8%;
+        }
+
+        @include responsive($ms-x-large) {
+            left: 28%;
+            bottom: 5%;
+        }
+
+    }
+    
+    
+    
+    
+    .container-port-int {
+        @include responsive($ms-large) {
+            width: 800px;
+        }
+
+        @include responsive($ms-x-large) {
+            width: 1020px;
+        }
+
+    }
+  
+    .portfolio-video {
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+        .video_fundo {
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            position: relative;
+            z-index: 10;
+            background-color: $white;
+        }
+    }
+}
+

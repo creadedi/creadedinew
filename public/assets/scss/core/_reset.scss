@@ -1,0 +1,111 @@
+// GENERAL
+* {
+    @include box-sizing();
+    
+    border: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: baseline;
+    /* z-index: 0; */
+}
+
+// Address '[hidden]' styling not present in IE 8/9.
+// Hide the 'template' element in IE, Safari, and Firefox < 22.
+[hidden], template {
+    display: none;
+}
+
+// Corrects block display not defined in IE6/7/8/9 & FF3
+article,
+aside,
+details,
+div,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+    position: relative;
+}
+
+// 1. Correct 'inline-block' display not defined in IE 6/7/8/9 and Firefox 3.
+// 2. Normalize vertical alignment of 'progress' in Chrome, Firefox, and Opera.
+audio,
+canvas,
+progress,
+video {
+    display: inline-block; // 1
+    vertical-align: baseline; // 2
+}
+
+// 1. Prevents modern browsers from displaying 'audio' without controls
+// 2. Remove excess height in iOS 5 devices
+audio:not([controls]) {
+    display: none; // 1
+    height: 0; // 2
+}
+
+img,
+picture {
+    border: 0;
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    width: auto;
+}
+
+// LIST
+dl {
+    margin-bottom: $small-spacing;
+
+    dd {
+        margin: 0;
+    }
+
+    dt {
+        margin-top: $small-spacing;
+    }
+}
+
+ol,
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    li {
+        display: inline-block;
+        white-space: normal;
+    }
+}
+
+// TABLE
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+
+    td,
+    th,
+    tr {
+        vertical-align: middle;
+    }
+}
+
+// a {
+//     text-decoration: none !important;
+
+//     &:hover {
+//         text-decoration: none !important;
+//     }
+// }

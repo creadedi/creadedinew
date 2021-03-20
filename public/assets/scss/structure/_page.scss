@@ -1,0 +1,226 @@
+html,
+body {
+    height: 100% !important;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: $white;
+}
+
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    height: 1px;
+
+}
+
+
+strong {
+    font-family: $font-bold;
+}
+
+.clear {
+    clear: both;
+}
+
+// #home {
+//     .engloba-photo {
+//         &.bgParallax {
+//             background-attachment: fixed;
+//         }
+//     }
+// }
+
+  
+.overflow {
+    overflow: hidden!important;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin:0!important;
+    padding:0!important;
+}
+
+.footer,
+.section,
+.page_contact,
+.foto-apresent-portfolio {
+    .flex {
+        @include display-flex();
+        @include align-items();
+        @include justify-content();
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+    }
+
+    .outline-text {
+        -webkit-text-fill-color:transparent;
+    }
+
+    .outline-white {
+        -webkit-text-stroke: 3px $white;
+    }
+
+    .outline-blue {
+        -webkit-text-stroke: 3px $color-primary;
+    }
+
+    .outline-green {
+        -webkit-text-stroke: 3px $color-secondary;
+    }
+
+    .outline-purple {
+        -webkit-text-stroke: 3px $color-quateary;
+    }
+
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.fundoblack {
+    background-color: $black;
+}
+
+.fundowhite {
+    background-color: $white;
+}
+
+.fundoblue {
+    background-color: $color-primary;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    display: table;
+    border: none;
+    position: relative;
+}
+
+.icone-base {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    
+    svg {
+        fill: $white;
+    }
+}
+
+
+.foto-geral {
+    display: block;
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.acessivel {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 0;
+    overflow: hidden;
+    &.print,
+    &.imprimir {
+        width: unset;
+        height: unset;
+        padding: unset;
+        margin: unset;
+        border: unset;
+        font-size: unset;
+        overflow: unset;
+    }
+}
+
+// SCROLLBAR //
+.scrollbar {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &#scroll-define {
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F5F5F5;
+        }
+        &::-webkit-scrollbar {
+            width: 10px;
+            background-color: #F5F5F5;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #F90;
+            background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent)
+        }
+        .force-overflow {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+/* SLIDER */
+
+.engloba-slider,
+.carousel {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: block;
+}
+
+.grid_system {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/grids/GoldenGrid-320.jpg);
+    @include responsive($ms-x-mid) {
+        background-image: url(../images/grids/GoldenGrid-768.jpg);
+    }
+    @include responsive($ms-mid) {
+        background-image: url(../images/grids/GoldenGrid-1920.jpg);
+    }
+}
+
+
+.fundo_slide_port,
+.foto-apresent-portfolio {
+    h2 {
+        position: absolute;
+        left: 0;
+        font-size: 220px;
+        color: $white;
+        font-family: $font-black;
+
+
+        @include responsive($ms-large) {
+            @include calc-rem(220px);
+        }
+
+        @include responsive($ms-x-large) {
+            @include calc-rem(310px);   
+        }
+    }
+}

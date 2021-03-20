@@ -1,0 +1,148 @@
+header {
+    /* Menu Trigger Structure */
+
+    .menu-trigger {
+       position: fixed;
+       @include display-flex();
+       @include align-items();
+       @include justify-content();
+       margin: 40px;
+       width: 75px;
+       height: 75px;
+       border: 3px solid $color-septenary;
+       right: 0;
+       cursor: pointer;
+
+        .line-menu {
+           position: absolute;
+           background-color:$color-septenary;
+           width:50px;
+           height:5px;
+
+           &:nth-child(1) {
+              top: 17px;
+              @include rotate(0deg);
+           }
+
+           &:nth-child(2) {
+              @include opacity(1);
+           }
+
+           &:nth-child(3) {
+              bottom: 17px;
+              @include rotate(0deg);
+           }
+
+           &.active-trigger {
+                &:nth-child(1) {
+                    @include animation-name(animatrigger-top);
+                }
+  
+                &:nth-child(2) {
+                    @include animation-name(animatrigger-center);
+                }
+    
+                &:nth-child(3) {
+                    @include animation-name(animatrigger-bottom);
+                }
+           }
+
+           &.reverse-trigger {
+                &:nth-child(1) {
+                    @include animation-name(animatrigger-topreverse);
+                }
+
+                &:nth-child(2) {
+                    @include animation-name(animatrigger-centerreverse);
+                }
+
+                &:nth-child(3) {
+                    @include animation-name(animatrigger-bottomreverse);
+                }
+           }
+        }
+
+        &.active-trigger {
+            @include animation-name(colortrigger);
+        }
+
+        &.reverse-trigger {
+            @include animation-name(colortriggerreverse);
+        }
+
+    }
+
+    .active-trigger,
+    .reverse-trigger {
+        @include animation-duration(1s);
+        @include animation-fill-mode(forwards);
+    }
+
+    /* Fim Menu Trigger Structure */
+}
+
+
+
+@include keyframes(animatrigger-top) {
+    0%   {top: 17px; transform: rotate(0deg); background-color:$color-septenary;}
+    25%  {top: 17px; transform: rotate(0deg); background-color:$color-septenary;}
+    50%  {top: 33px; transform: rotate(00deg); background-color:$white;}
+    75%  {top: 33px; transform: rotate(-45deg); background-color:$white;}
+    100% {top: 33px; transform: rotate(-45deg); background-color:$white;}
+}
+
+@include keyframes(animatrigger-center) {
+    0%   {@include opacity(1);}
+    25%  {@include opacity(1);}
+    50%  {@include opacity(0);}
+    100% {@include opacity(0);}
+}
+
+@include keyframes(animatrigger-bottom) {
+    0%   {bottom: 17px; transform: rotate(0deg); background-color:$color-septenary;}
+    25%  {bottom: 17px; transform: rotate(0deg); background-color:$color-septenary;}
+    50%  {bottom: 33px; transform: rotate(0deg); background-color:$color-septenary;}
+    75%  {bottom: 33px; transform: rotate(45deg); background-color:$white;}
+    100% {bottom: 33px; transform: rotate(45deg); background-color:$white;}
+}
+
+@include keyframes(colortrigger) {
+ 0%   {border-color: $color-septenary;}
+ 25%  {border-color: $color-septenary;}
+ 50%  {border-color: $color-septenary;}
+ 75%  {border-color: $white;}
+ 100% {border-color: $white;}
+}
+
+@include keyframes(animatrigger-topreverse) {
+ 0%   {top: 33px; transform: rotate(-45deg); background-color:$white;}
+ 25%  {top: 33px; transform: rotate(-45deg); background-color:$white;}
+ 50%  {top: 33px; transform: rotate(0deg); background-color:$color-septenary;}
+ 75%  {top: 17px; transform: rotate(0deg); background-color:$color-septenary;}
+ 100% {top: 17px; transform: rotate(0deg); background-color:$color-septenary;}
+}
+
+@include keyframes(animatrigger-centerreverse) {
+ 0%   {@include opacity(0);}
+ 25%  {@include opacity(0);}
+ 50%  {@include opacity(1);}
+ 100% {@include opacity(1);}
+}
+
+@include keyframes(animatrigger-bottomreverse) {
+ 0%   {bottom: 33px; transform: rotate(45deg); background-color:$white;}
+ 25%  {bottom: 33px; transform: rotate(45deg); background-color:$white;}
+ 50%  {bottom: 33px; transform: rotate(0deg); background-color:$color-septenary;}
+ 75%  {bottom: 17px; transform: rotate(0deg); background-color:$color-septenary;}
+ 100% {bottom: 17px; transform: rotate(0deg); background-color:$color-septenary;}
+}
+
+@include keyframes(colortriggerreverse) {
+ 0%   {border-color: $white;}
+ 25%  {border-color: $white;}
+ 50%  {border-color: $color-septenary;}
+ 75%  {border-color: $color-septenary;}
+ 100% {border-color: $color-septenary;}
+}
+
+/* End Menu Trigger Structure */

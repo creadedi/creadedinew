@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.0.0",
+    "cross-env": "^5.1",
+    "gulp": "^4.0.2",
+    "gulp-install": "^1.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-svg-symbols": "^3.2.3",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.2",
+    "jshint": "^2.12.0",
+    "laravel-mix": "^2.0",
+    "lodash": "^4.17.4",
+    "node-sass": "^4.14.1",
+    "popper.js": "^1.12",
+    "vue": "^2.5.7"
+  },
+  "name": "creadedi_site",
+  "version": "1.0.0",
+  "description": "crea",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creadedi/creadedisite.git"
+  },
+  "keywords": [
+    "crea389120"
+  ],
+  "author": "Creadedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/creadedi/creadedisite/issues"
+  },
+  "homepage": "https://github.com/creadedi/creadedisite#readme"
+}

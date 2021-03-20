@@ -1,0 +1,286 @@
+
+.video {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    background-color: $white;
+}
+
+.bloco-name {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.engloba-conteudo {
+    display: block;
+    position: relative;
+    width: 100%;
+
+    @include responsive($ms-large) {
+        width: 1200px;
+    }
+    @include responsive($ms-x-large) {
+        width: 1500px;
+    }
+
+    p {
+        font-family:$font-x-small;
+        color:$color-primary;
+        font-weight: 100;
+
+        @include responsive($ms-large) {
+            @include calc-rem(90px);
+        }
+
+        @include responsive($ms-x-large) {
+            @include calc-rem(110px);
+        }
+    }
+}
+
+.foto-pessoa {
+    position: absolute;
+    z-index:4;
+    margin-top:50px;
+    width:700px;
+    height:96vh;
+    background-image: url(../images/foto_portfolio.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    @include responsive($ms-large) {
+        width:700px;
+    }
+
+    @include responsive($ms-x-large) {
+        width:700px;
+    }
+}
+
+.letras-name {
+    @include display-flex();
+    @include flex-direction(column);
+    @include align-items();
+    @include justify-content();
+
+    h2 {
+        font-family: $font-black;
+        position: relative;
+        z-index:2;
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            @include calc-rem(90px);
+            text-transform: uppercase;
+            line-height: 85%;
+
+            @include responsive($ms-large) {
+                @include calc-rem(500px);
+            }
+
+            @include responsive($ms-x-large) {
+                @include calc-rem(640px);
+            }
+        }
+
+        &:nth-child(2) {
+            color:$color-primary;
+            @include calc-rem(26px);
+
+            @include responsive($ms-large) {
+                font-size: 32px;
+                left: -35%;
+            }
+        }
+    }
+}
+
+
+
+.fundo_slide_port {
+    h2 {
+        margin: 130px 0 10px 0;
+        top: 5%;
+        z-index: 2;
+
+        @include responsive($ms-large) {
+            margin: 130px 0 10px 0;
+            top: 0;
+        }
+
+        @include responsive($ms-x-large) {
+            margin: 70px 0 10px 0; 
+        }
+    }
+
+    .slider_principal {
+        position: relative;
+        z-index: 1;
+
+        .fundo_imagem_port {
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            @include filter(grayscale, 100%);
+
+            h2, h3, p {
+                color:$white;
+                position: relative!important;
+            }
+
+            h2 {
+                font-family: $font-black;
+
+                @include responsive($ms-large) {
+                    margin: 10px 0!important;
+                    @include calc-rem(70px);
+                }
+        
+                @include responsive($ms-x-large) {
+                    margin: 10px 0!important;
+                    @include calc-rem(90px);
+                }
+            }
+
+            h3 {
+                font-family: $font-x-small;
+
+                @include responsive($ms-large) {
+                    margin: 0 0 40px 0!important;
+                    @include calc-rem(90px);
+                }
+        
+                @include responsive($ms-x-large) {
+                    margin: 10px 0 40px 0!important;
+                    @include calc-rem(110px);
+                }
+            }
+
+            p {
+                font-family: $font;
+
+                @include responsive($ms-large) {
+                    margin: 0 0 10px 0!important;
+                    @include calc-rem(26px);
+                    width: 80%;
+                }
+        
+                @include responsive($ms-x-large) {
+                    @include calc-rem(30px);
+                }
+            }
+
+            a {
+                margin-top: 30px;
+                text-decoration: none;
+                span {
+                    @include calc-rem(25px);
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    text-decoration: none;
+                    letter-spacing: 0.333333em;
+                    color: $white;
+                    @include responsive($ms-large) {
+                        @include calc-rem(22px);
+                    }
+                    @include responsive($ms-x-large) {
+                        @include calc-rem(25px);
+                    }
+                }
+                &::after {
+                    background-color: $white;
+                    content: '';
+                    height: 1px;
+                    width: 18.333333em;
+                    display: inline-block;
+                    margin-left: 1em;
+                    vertical-align: middle;
+                }
+                &:hover {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+.engloba_services {
+    background-color: $color-quateary;
+    height:100%;
+    min-height:100vh;
+    @include display-flex();
+    @include align-items(left);
+    @include justify-content();
+    @include flex-direction(column);
+
+    h2 {
+        color: $white;
+        @include calc-rem(70px);
+        padding: 0 80px 30px 80px;
+        font-family: $font-bold;
+        line-height: 110%;
+
+        @include responsive($ms-large) {
+            @include calc-rem(40px);
+        }
+        @include responsive($ms-x-large) {
+            @include calc-rem(60px);
+        }
+        @include responsive($ms-hd-full) {
+            @include calc-rem(70px);
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0 80px;
+
+        li {
+            color: $white;
+            @include calc-rem(40px);
+            display: block;
+            padding: 5px 0;
+            @include responsive($ms-large) {
+                @include calc-rem(25px);
+            }
+            @include responsive($ms-x-large) {
+                @include calc-rem(30px);
+            }
+            @include responsive($ms-hd-full) {
+                @include calc-rem(40px);
+            }
+            a {
+                color: $white;
+                text-decoration: none;
+                &:hover {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.fundo_services {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height:100%;
+    min-height:100vh;
+}
+
+.engloba_services,
+.fundo_services {
+    margin:0!important;
+}

@@ -1,0 +1,76 @@
+footer {
+    margin:0!important;
+    padding:0!important;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/flat_porto_alegre.png);
+    background-color:$color-secondary;
+    position:fixed!important;
+    z-index:2;
+    top:0;
+    // .maps {
+    //     height: 467px;
+    //     width: 100%;
+    //     position: relative;
+    //     display: block;
+    // }
+}
+
+.footer {
+    .engloba-conteudo {
+        p,
+        span,
+        .email-padrao {
+
+            color: $white!important;
+
+            @include responsive($ms-large) {
+                @include calc-rem(90px);
+            }
+            @include responsive($ms-x-large) {
+                @include calc-rem(100px);
+            }
+            @include responsive($ms-hd-full) {
+                @include calc-rem(140px);
+            }
+        }
+        
+        span {
+            font-family: $font-x-small;
+
+            .email-padrao {
+                @include transition(all $base-duration $base-timing);
+                text-decoration: none;
+                display: inline-block;
+                font-family: $font-small;
+                &:hover {
+                    color: $color-septenary;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        p {
+            font-family: $font-x-small!important;
+            line-height: 100%;
+        }
+    }
+
+    .fundo-topo-rodape {
+        background-color:$color-secondary;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        z-index:5;
+    }
+}
+
+.fundo-footer {
+    @include opacity (0);
+}
