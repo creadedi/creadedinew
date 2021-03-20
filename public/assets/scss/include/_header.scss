@@ -1,24 +1,56 @@
 header {
     /* Menu Trigger Structure */
 
+    .menu-contact,
     .menu-trigger {
-       position: fixed;
-       @include display-flex();
-       @include align-items();
-       @include justify-content();
-       margin: 40px;
-       width: 75px;
-       height: 75px;
-       border: 3px solid $color-septenary;
-       right: 0;
-       cursor: pointer;
+        position: fixed;
+        @include display-flex();
+        @include align-items();
+        @include justify-content();
+        margin: 40px;
+        width: 75px;
+        height: 75px;
+        cursor: pointer;
 
         .line-menu {
-           position: absolute;
-           background-color:$color-septenary;
-           width:50px;
-           height:5px;
+            position: absolute;
+            width:50px;
+            height:5px;
+        }
+    }
 
+    .menu-contact {
+        border: 3px solid $white;
+        left: 0;
+
+        .line-menu {
+            background-color:$white;
+
+            &:nth-child(1) {
+                top: 22px;
+                @include rotate(-45deg);
+            }
+  
+            &:nth-child(3) {
+                bottom: 22px;
+                @include rotate(45deg);
+            }
+
+            &:nth-child(1),
+            &:nth-child(3) {
+                width: 25px;
+                left: 9px;
+            }
+        }
+    }
+
+    .menu-trigger {
+       border: 3px solid $color-septenary;
+       right: 0;
+
+        .line-menu {
+           background-color:$color-septenary;
+           
            &:nth-child(1) {
               top: 17px;
               @include rotate(0deg);

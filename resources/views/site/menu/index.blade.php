@@ -1,5 +1,11 @@
 <header>
 
+  <div class="menu-contact">
+    <div class="line-menu"></div>
+    <div class="line-menu"></div>
+    <div class="line-menu"></div>
+  </div>
+
 
   <div class="menu-trigger">
     <div class="line-menu"></div>
