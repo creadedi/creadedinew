@@ -6,7 +6,10 @@
 <body  data-modules="min/quem_sou">
 
 
-@include('site.menu.index')
+
+
+
+   @include('site.menu.index')
 
    <div id="fullpage" class="wrapper">
          <section class="section">    

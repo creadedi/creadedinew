@@ -14,6 +14,7 @@ requirejs.config({
     },
 
     shim: {
+  
         'bootstrap': {
             'deps': ['jquery']
         },
@@ -37,6 +38,9 @@ define(['jquery', 'bootstrap', 'modernizr'], function () {
         },
 
         main: function () {
+           // LOADER
+           MAIN.ld();
+
            // FULL PAGE
            MAIN.fp();
 
@@ -115,6 +119,12 @@ define(['jquery', 'bootstrap', 'modernizr'], function () {
             }); 
            
         },
+
+        /* INÍCIO FUNÇÃO LOADER*/
+        ld: function () {
+           
+        },
+        /* FIM FUNÇÃO LOADER */
 
 
         /* INÍCIO FUNÇÃO FULL PAGE */

@@ -3,11 +3,10 @@
 @section('conteudo')
 
 <!-- BODY -->
-<body  data-modules="min/home" class="scrollbar">
+<body  data-modules="min/home">
 
-
-
-@include('site.menu.index')
+    
+    @include('site.menu.index')
       <div id="block" class="video" data-vide-bg="assets/video/video_intro_creadedi" data-vide-options="position: 50% 50%"></div>
    
       <div id="fullpage" class="wrapper">
@@ -46,13 +45,7 @@
 
                 <div class="engloba-slider slider_principal">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                      <!-- Indicators -->
-                      <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-                      </ol>
-          
+
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">

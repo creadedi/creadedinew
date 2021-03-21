@@ -23,7 +23,10 @@ define(['jquery'], function () {
             FAZER.sm();
 
            // TWEENLITE
-           FAZER.tw();
+           FAZER.tl();
+
+           // TWEENMAX
+           FAZER.tm();
         },
 
         triggers: function () {
@@ -33,9 +36,16 @@ define(['jquery'], function () {
 
 
         /* TWEEN LITE */
-        tw: function () {
+        tl: function () {
             require(['tweenLite', 'animationGsap'], function (TweenLite) {
 
+            });
+        },
+
+        /* TWEEN MAX */
+        tm: function () {
+            require(['tweenMax', 'animationGsap'], function (TweenMax) {
+           
             });
         },
 

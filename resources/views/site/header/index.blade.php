@@ -21,6 +21,7 @@
     <!-- Bootstrap -->
     <link href="{{ asset('assets/css/base.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/animsition.min.css') }}" rel="stylesheet">
     
     <!--[if gte IE 9]>
   <style type="text/css">

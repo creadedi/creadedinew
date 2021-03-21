@@ -5,7 +5,8 @@
 <!-- BODY -->
 <body data-modules="min/portfolio">
 
-@include('site.menu.index')
+
+   @include('site.menu.index')
 
    <div class="foto-apresent-portfolio">
 

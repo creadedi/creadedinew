@@ -42,14 +42,7 @@ define(['jquery', 'vide'], function () {
         /* TWEEN MAX */
         tm: function () {
             require(['tweenMax', 'animationGsap'], function (TweenMax) {
-                TweenMax.staggerFromTo('.item-serv', 0.5, {
-                    opacity: 0,
-                    x: 80
-                }, {
-                    opacity: 1,
-                    x: 0,
-                    delay: 1
-                }, .5);
+           
             });
         },
 
@@ -142,7 +135,22 @@ define(['jquery', 'vide'], function () {
                         delay: 2.2
                     }))
                     .addTo(HOME.controller);
-                });  
+                });
+                
+                $('.section').each(function () {
+                    new ScrollMagic.Scene({
+                        triggerElement: ".engloba_services",
+                    })
+                    .setTween(TweenMax.staggerFromTo('.item-serv', 0.5, {
+                        opacity: 0,
+                        x: 80
+                    }, {
+                        opacity: 1,
+                        x: 0,
+                        delay: 1
+                    }, 1))
+                    .addTo(HOME.controller);
+                }); 
             
             });
         },

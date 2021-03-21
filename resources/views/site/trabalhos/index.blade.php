@@ -6,8 +6,7 @@
 <body  data-modules="min/trabalhos">
 
 
-
-@include('site.menu.index')
+   @include('site.menu.index')
 
    <div id="fullpage" class="wrapper">
          <section class="section">
