@@ -29,6 +29,8 @@
         @include flex-direction(column);
         @include align-items();
         @include justify-content();
+        position: relative;
+        z-index:7;
         
         li {
             list-style: none;
@@ -39,6 +41,7 @@
                 font-family: $font-black;
                 color:$white;
                 text-transform: uppercase;
+                display: block;
                 cursor: pointer;
     
                 @include responsive($ms-large) {
@@ -51,13 +54,47 @@
                 a {
                     text-decoration: none;
                     color:$white!important;
+                    @include transition(all $modal-duration $base-timing);
+                    @include transition-duration(.5s);
+                    @include transition-timing-function(ease-out);
     
                     &:hover {
                         text-decoration: none;
                         color: $white!important;
+                        @include scale(1.3, 1.3);
                     }
                 }
+
             }
+        }
+    }
+
+    .fundo_personagens {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+
+    .pers1,
+    .pers2,
+    .pers3,
+    .pers4,
+    .pers5 {
+        @include opacity (0);
+        @include transition(all $modal-duration $base-timing);
+        @include transition-duration(.5s);
+        @include transition-timing-function(ease-out);
+
+        &.active-pers {
+            @include opacity (1);
         }
     }
  }

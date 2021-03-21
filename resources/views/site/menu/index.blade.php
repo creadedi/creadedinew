@@ -18,12 +18,18 @@
 <!-- MODAL MENU -->
 <nav class="menu_full">
     <ul>
-      <li class="link_block"><a href="{{ URL::asset('quem_sou') }}">Quem sou eu</a></li>
-      <li class="link_block"><a href="{{ URL::asset('que_sei_fazer') }}">O que sei fazer</a></li>
-      <li class="link_block"><a href="{{ URL::asset('portfolio_interno') }}">Trabalhos</a></li>
-      <li class="link_block"><a href="{{ URL::asset('blog') }}">Blog</a></li>
-      <li class="link_block bt-contact">Contato</li>
+      <li class="link_block link1"><a href="{{ URL::asset('quem_sou') }}">Quem sou eu</a></li>
+      <li class="link_block link2"><a href="{{ URL::asset('que_sei_fazer') }}">O que sei fazer</a></li>
+      <li class="link_block link3"><a href="{{ URL::asset('portfolio_interno') }}">Trabalhos</a></li>
+      <li class="link_block link4"><a href="{{ URL::asset('blog') }}">Blog</a></li>
+      <li class="link_block link5 bt-contact"><a>Contato</a></li>
     </ul>
+
+    <div class="fundo_personagens pers1" style="background-image:url(assets/images/fundo_personagem1.jpg);"></div>
+    <div class="fundo_personagens pers2" style="background-image:url(assets/images/fundo_personagem2.jpg);"></div>
+    <div class="fundo_personagens pers3" style="background-image:url(assets/images/fundo_personagem3.jpg);"></div>
+    <div class="fundo_personagens pers4" style="background-image:url(assets/images/fundo_personagem4.jpg);"></div>
+    <div class="fundo_personagens pers5" style="background-image:url(assets/images/fundo_personagem5.jpg);"></div>
 </nav>
 
 <!-- FIM MODAL MENU -->

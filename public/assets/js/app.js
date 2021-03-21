@@ -84,9 +84,46 @@ define(['jquery', 'bootstrap', 'modernizr'], function () {
                 });
                 /* Fim Função Menu Contato */
 
+
+                /* Início Contato Rodapé */
                 $('.bt-footer-contact').click(function(){
                     $('body').addClass('overflow');
                 });
+                /* Fim Contato Rodapé */
+
+                /* Início Função Menu Background */
+                $('.link1').mouseenter(function() {
+                    $('.pers1').addClass('active-pers');
+                }).mouseleave(function() {
+                    $('.pers1').removeClass('active-pers');
+                });
+
+                $('.link2').mouseenter(function() {
+                    $('.pers2').addClass('active-pers');
+                }).mouseleave(function() {
+                    $('.pers2').removeClass('active-pers');
+                });
+
+                $('.link3').mouseenter(function() {
+                    $('.pers3').addClass('active-pers');
+                }).mouseleave(function() {
+                    $('.pers3').removeClass('active-pers');
+                });
+
+                $('.link4').mouseenter(function() {
+                    $('.pers4').addClass('active-pers');
+                }).mouseleave(function() {
+                    $('.pers4').removeClass('active-pers');
+                });
+
+                $('.link5').mouseenter(function() {
+                    $('.pers5').addClass('active-pers');
+                }).mouseleave(function() {
+                    $('.pers5').removeClass('active-pers');
+                });
+
+    
+                /* Fim Função Menu Background */
             }); 
            
         },
