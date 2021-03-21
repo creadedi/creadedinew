@@ -17,6 +17,7 @@
 
 <!-- MODAL MENU -->
 <nav class="menu_full">
+    <ul>
       <li class="link_block"><a href="{{ URL::asset('quem_sou') }}">Quem sou eu</a></li>
       <li class="link_block"><a href="{{ URL::asset('que_sei_fazer') }}">O que sei fazer</a></li>
       <li class="link_block"><a href="{{ URL::asset('portfolio_interno') }}">Trabalhos</a></li>

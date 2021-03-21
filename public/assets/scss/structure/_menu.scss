@@ -17,38 +17,45 @@
  }
  
  .menu_full {
-     @include display-flex();
-     @include flex-direction(column);
-     @include align-items();
-     @include justify-content();
-     background-color:$color-tertiary;
-     z-index: 5;
+    @include display-flex();
+    @include align-items();
+    @include justify-content();
+     
+    background-color:$color-tertiary;
+    z-index: 5;
 
-    li {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        &.link_block {
-            font-family: $font-black;
-            color:$white;
-            text-transform: uppercase;
-            cursor: pointer;
-
-            @include responsive($ms-large) {
-                @include calc-rem(140px);
-            }
-            @include responsive($ms-x-large) {
-                @include calc-rem(180px);
-            }
-
-            a {
-                text-decoration: none;
-                color:$white!important;
-
-                &:hover {
+    ul {
+        @include display-flex();
+        @include flex-direction(column);
+        @include align-items();
+        @include justify-content();
+        
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+    
+            &.link_block {
+                font-family: $font-black;
+                color:$white;
+                text-transform: uppercase;
+                cursor: pointer;
+    
+                @include responsive($ms-large) {
+                    @include calc-rem(140px);
+                }
+                @include responsive($ms-x-large) {
+                    @include calc-rem(180px);
+                }
+    
+                a {
                     text-decoration: none;
-                    color: $white!important;
+                    color:$white!important;
+    
+                    &:hover {
+                        text-decoration: none;
+                        color: $white!important;
+                    }
                 }
             }
         }
@@ -56,7 +63,10 @@
  }
 
  .page_contact {
-    background-color:$color-quateary;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/fundo_int.jpg);
     z-index: 8;
     overflow: hidden;
 

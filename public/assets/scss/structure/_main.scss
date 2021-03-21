@@ -216,7 +216,10 @@
 
 
 .engloba_services {
-    background-color: $color-quateary;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/fundo_int.jpg);
     height:100%;
     min-height:100vh;
     @include display-flex();

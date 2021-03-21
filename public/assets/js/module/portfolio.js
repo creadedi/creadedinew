@@ -33,7 +33,6 @@ define(['jquery', 'vide'], function () {
         /* TWEEN LITE */
         tw: function () {
             require(['tweenLite', 'animationGsap'], function (TweenLite) {
-                if ($(window).width() > 850) {
 
                     TweenLite.fromTo('.foto-topo-portfolio', .5, {
                         opacity: 0
@@ -69,7 +68,7 @@ define(['jquery', 'vide'], function () {
                         delay: 2.2
                     });
 
-                }
+               
             });
         },
 
@@ -78,7 +77,7 @@ define(['jquery', 'vide'], function () {
             require(['tweenMax', 'scrollMagic', 'timelineMax', 'animationGsap'], function (TweenMax, ScrollMagic, TimelineMax) {
                 PORT.controller = new ScrollMagic.Controller();
 
-                if ($(window).width() > 850) {
+             
                    
                     $('.section').each(function () {
                         new ScrollMagic.Scene({
@@ -308,7 +307,7 @@ define(['jquery', 'vide'], function () {
                             .addTo(PORT.controller);
                     });
 
-                }
+             
             });
         },
     };

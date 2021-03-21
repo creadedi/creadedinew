@@ -18,7 +18,7 @@
          </section>
 
          <section class="section" id="texto-nome-grande">
-            <div class="fundoblack bloco-name">
+            <div class="fundohome bloco-name">
               <div class="flex">
                   <div class="foto-pessoa"></div>
                   <div class="engloba-conteudo letras-name">
@@ -30,7 +30,7 @@
             </div>
          </section>
 
-         <section class="section fundoblack" id="texto-comp">
+         <section class="section fundohome" id="texto-comp">
             <div class="flex pont-troca">
                <div class="engloba-conteudo">
                   <div class="col-xs-12 col-md-7 text-intro-home"><p>Olá, sou Alisson Santos, sou um Designer, Motion Designer e Designer UX/UI. Vivo a animação e o Design Gráfico como uma divertida e vibrante paixão.</p></div>
@@ -127,19 +127,19 @@
          </section>
 
 
-         <section class="section">
+         <section class="section servicos fundowhite">
               <div class="col-xs-12 col-md-7 fundo_services" style="background-image:url(assets/images/foto_base4.jpg);">
               </div>
               <div class="col-xs-12 col-md-5 engloba_services">
                 
                     <h2>Alguns dos serviços <br>que eu sei fazer</h2>
                     <ul>
-                        <li><a>Interface Design</a></li>
-                        <li><a>Brand Strategy</a></li>
-                        <li><a>Web Design</a></li>
-                        <li><a>Social</a></li>
-                        <li><a>Motion</a></li>
-                        <li><a>Development</a></li>
+                        <li class="item-serv"><a>Interface Design</a></li>
+                        <li class="item-serv"><a>Brand Strategy</a></li>
+                        <li class="item-serv"><a>Web Design</a></li>
+                        <li class="item-serv"><a>Social</a></li>
+                        <li class="item-serv"><a>Motion</a></li>
+                        <li class="item-serv"><a>Development</a></li>
                     </ul>
                   
              </div> 

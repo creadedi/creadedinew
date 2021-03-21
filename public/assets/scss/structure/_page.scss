@@ -91,6 +91,13 @@ section {
     margin: 0 auto;
 }
 
+.fundohome {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/fundo_home.jpg);
+}
+
 .fundoblack {
     background-color: $black;
 }
