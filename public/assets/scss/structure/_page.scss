@@ -25,7 +25,7 @@ body {
         @include transition-duration(.5s);
         @include transition-timing-function(ease-out);
         display: block;
-        background-color:$white;
+        background-color:#E9E1E1;
 
         &.active-loadend {
             @include opacity (1);

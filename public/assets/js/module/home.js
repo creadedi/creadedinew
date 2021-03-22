@@ -50,7 +50,12 @@ define(['jquery', 'vide'], function () {
         /* TWEEN LITE */
         tl: function () {
             require(['tweenLite', 'animationGsap'], function (TweenLite) {
-
+                TweenLite.fromTo('#block', 0.5, {
+                    opacity: 0
+                }, {
+                    opacity: 1,
+                    delay: 3
+                });
             });
         },
 
