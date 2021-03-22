@@ -126,7 +126,7 @@
               </div>
               <div class="col-xs-12 col-md-5 engloba_services">
                 
-                    <h2>Alguns dos serviços <br>que eu sei fazer</h2>
+                    <h2>Coisas que <br>eu sei fazer</h2>
                     <ul>
                         <li class="item-serv"><a>Interface Design</a></li>
                         <li class="item-serv"><a>Brand Strategy</a></li>
