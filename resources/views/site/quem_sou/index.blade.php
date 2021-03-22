@@ -6,8 +6,8 @@
 <body  data-modules="min/quem_sou">
 
 
-
-
+<div class="fakeLoader"></div>
+<div class="loadend active-loadend"></div>
 
    @include('site.menu.index')
 

@@ -5,7 +5,8 @@
 <!-- BODY -->
 <body  data-modules="min/sei_fazer">
 
-
+<div class="fakeLoader"></div>
+<div class="loadend active-loadend"></div>
    @include('site.menu.index')
 
    <div id="fullpage" class="wrapper">

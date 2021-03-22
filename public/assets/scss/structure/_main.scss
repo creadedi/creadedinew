@@ -21,7 +21,7 @@
     width: 100%;
 
     @include responsive($ms-large) {
-        width: 1200px;
+        width: 1150px;
     }
     @include responsive($ms-x-large) {
         width: 1500px;
@@ -33,7 +33,7 @@
         font-weight: 100;
 
         @include responsive($ms-large) {
-            @include calc-rem(90px);
+            @include calc-rem(80px);
         }
 
         @include responsive($ms-x-large) {

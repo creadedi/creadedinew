@@ -5,7 +5,8 @@
 <!-- BODY -->
 <body  data-modules="min/home">
 
-    
+    <div class="fakeLoader"></div>
+    <div class="loadend active-loadend"></div>
     @include('site.menu.index')
       <div id="block" class="video" data-vide-bg="assets/video/video_intro_creadedi" data-vide-options="position: 50% 50%"></div>
    
@@ -56,7 +57,7 @@
                                               <h2 class="outline-text outline-white titulo_project">01. Transposul</h2>
                                               <h3 class="titulo_case">Website Corporativo</h3>
                                               <p class="paragrafo_project_home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                                              <a class="link_project_home" href="{{ URL::asset('portfolio_interno') }}">
+                                              <a class="link_project_home link-nav" href="{{ URL::asset('portfolio_interno') }}">
                                                  <span>Veja o projeto</span>
                                               </a>
                                           </div>
@@ -74,7 +75,7 @@
                                               <h2 class="outline-text outline-white titulo_project">01. Transposul</h2>
                                               <h3 class="titulo_case">Website Corporativo</h3>
                                               <p class="paragrafo_project_home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                                              <a class="link_project_home" href="{{ URL::asset('portfolio_interno') }}">
+                                              <a class="link_project_home link-nav" href="{{ URL::asset('portfolio_interno') }}">
                                                  <span>Veja o projeto</span>
                                               </a>
                                           </div>
@@ -92,7 +93,7 @@
                                               <h2 class="outline-text outline-white titulo_project">01. Transposul</h2>
                                               <h3 class="titulo_case">Website Corporativo</h3>
                                               <p class="paragrafo_project_home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-                                              <a class="link_project_home" href="{{ URL::asset('portfolio_interno') }}">
+                                              <a class="link_project_home link-nav" href="{{ URL::asset('portfolio_interno') }}">
                                                  <span>Veja o projeto</span>
                                               </a>
                                           </div>

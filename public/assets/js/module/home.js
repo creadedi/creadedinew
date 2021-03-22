@@ -286,13 +286,13 @@ define(['jquery', 'vide'], function () {
                     new ScrollMagic.Scene({
                         triggerElement: ".servicos",
                     })
-                    .setTween(TweenMax.fromTo($('.engloba_services'), 0.4, {
+                    .setTween(TweenMax.fromTo($('.engloba_services'), 0.2, {
                         opacity: 0,
                         y: 180
                     }, {
                         opacity: 1,
                         y: 0,
-                        delay: 0.3
+                        delay: 0.2
                     }))
                     .addTo(HOME.controller);
                 });

@@ -34,38 +34,38 @@ define(['jquery', 'vide'], function () {
         tw: function () {
             require(['tweenLite', 'animationGsap'], function (TweenLite) {
 
-                    TweenLite.fromTo('.foto-topo-portfolio', .5, {
+                    TweenLite.fromTo('.foto-topo-portfolio', 0.5, {
                         opacity: 0
                     }, {
                         opacity: 1,
-                        delay: .8
+                        delay: 3
                     });
 
-                    TweenLite.fromTo('.foto-apresent-portfolio h2', .5, {
+                    TweenLite.fromTo('.foto-apresent-portfolio h2', 0.5, {
                         x: 80,
                         opacity: 0,
                     }, {
                         x: 0,
                         opacity: 1,
-                        delay: 1.2
+                        delay: 3.5
                     });
 
-                    TweenLite.fromTo('.cont-apresentacao', .5, {
+                    TweenLite.fromTo('.cont-apresentacao', 0.5, {
                         x: -30,
                         opacity: 0
                     }, {
                         y: 0,
                         opacity: 1,
-                        delay: 1.8
+                        delay: 4
                     });
 
-                    TweenLite.fromTo('.top-link', .5, {
+                    TweenLite.fromTo('.top-link', 0.5, {
                         y: -30,
                         opacity: 0
                     }, {
                         y: 0,
                         opacity: 1,
-                        delay: 2.2
+                        delay: 4.5
                     });
 
                
@@ -77,6 +77,20 @@ define(['jquery', 'vide'], function () {
             require(['tweenMax', 'scrollMagic', 'timelineMax', 'animationGsap'], function (TweenMax, ScrollMagic, TimelineMax) {
                 PORT.controller = new ScrollMagic.Controller();
 
+                $('.section').each(function () {
+                    new ScrollMagic.Scene({
+                        triggerElement: $(this)[0],
+                        triggerHook: 0.8,
+                        reverse: true
+                    })
+                        .setTween(TweenMax.fromTo($('.suporte-pc img', this), .3, {
+                            opacity: 0
+                        }, {
+                                opacity: 1,
+                                delay: .6
+                            }))
+                        .addTo(PORT.controller);
+                });
              
                    
                     $('.section').each(function () {

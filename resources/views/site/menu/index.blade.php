@@ -18,10 +18,10 @@
 <!-- MODAL MENU -->
 <nav class="menu_full">
     <ul>
-      <li class="link_block link1"><a href="{{ URL::asset('quem_sou') }}">Quem sou eu</a></li>
-      <li class="link_block link2"><a href="{{ URL::asset('que_sei_fazer') }}">O que sei fazer</a></li>
-      <li class="link_block link3"><a href="{{ URL::asset('portfolio_interno') }}">Trabalhos</a></li>
-      <li class="link_block link4"><a href="{{ URL::asset('blog') }}">Blog</a></li>
+      <li class="link_block link1 link-nav"><a href="{{ URL::asset('quem_sou') }}">Quem sou eu</a></li>
+      <li class="link_block link2 link-nav"><a href="{{ URL::asset('que_sei_fazer') }}">O que sei fazer</a></li>
+      <li class="link_block link3 link-nav"><a href="{{ URL::asset('portfolio_interno') }}">Trabalhos</a></li>
+      <li class="link_block link4 link-nav"><a href="{{ URL::asset('blog') }}">Blog</a></li>
       <li class="link_block link5 bt-contact"><a>Contato</a></li>
     </ul>
 

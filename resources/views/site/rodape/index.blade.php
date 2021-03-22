@@ -12,9 +12,7 @@
 </div>
 
 
-
 <footer class="fundo-footer">
     <div class="fundo-topo-rodape"></div>
     
 </footer>
-

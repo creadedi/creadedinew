@@ -5,7 +5,8 @@
 <!-- BODY -->
 <body data-modules="min/portfolio">
 
-
+<div class="fakeLoader"></div>
+<div class="loadend active-loadend"></div>
    @include('site.menu.index')
 
    <div class="foto-apresent-portfolio">
@@ -42,16 +43,14 @@
             
          </section>
 
-         <section class="section fundowhite">
-            <div class="flex">
-               <div class="engloba-conteudo">
-                   <h2>teste 1</h2>
-               </div>
+         <section class="section">
+            <div class="fundo-portfolio suporte-pc">
+                 <img src="{{ asset('assets/images/mockup_slider_pc.png')}}" alt="imagem 03" class="img-responsive center-block">
             </div>
          </section>
       
          <section class="section fundo-portfolio">
-            <div class="flex pont-troca">
+            <div class="flex">
                <div class="engloba-conteudo bloco-missao">
                   <div class="col-xs-12 col-md-4"><h2 class="outline-text outline-blue">objetivo</h2></div>
                   <div class="col-xs-12 col-md-8"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -67,7 +66,7 @@
          </section>
 
          <section class="section fundo-portfolio">
-            <div class="flex">
+            <div class="flex pont-troca">
                <div class="engloba-conteudo bloco-story">
                <div class="col-xs-12 col-md-4">
                   <div class="icone-section">

@@ -4,6 +4,7 @@ requirejs.config({
         'jquery': './library/jquery',
         'bootstrap': './library/bootstrap',
         'fullpage': './plugin/fullpage',
+        'loader': './plugin/fakeloader',
         'animationGsap': './plugin/animationGsap',
         'modernizr': './plugin/modernizr',
         'scrollMagic': './plugin/scrollMagic',
@@ -14,7 +15,10 @@ requirejs.config({
     },
 
     shim: {
-  
+        'loader': {
+            'deps': ['jquery']
+        },
+
         'bootstrap': {
             'deps': ['jquery']
         },
@@ -77,11 +81,14 @@ define(['jquery', 'bootstrap', 'modernizr'], function () {
                 });
                 /* Fim Função Menu Contato Fechando */
 
+                
+
                 /* Início Contato Rodapé */
                 $('.bt-footer-contact').click(function(){
                     $('body').addClass('overflow');
                 });
                 /* Fim Contato Rodapé */
+
 
                 /* Início Função Menu Background */
                 $('.link1').mouseenter(function() {
@@ -113,16 +120,29 @@ define(['jquery', 'bootstrap', 'modernizr'], function () {
                 }).mouseleave(function() {
                     $('.pers5').removeClass('active-pers');
                 });
-
-    
                 /* Fim Função Menu Background */
+
+                /* Fim Função Menu Background */
+                $('.link-nav').click(function(){
+                    $('.loadend').addClass('active-loadend');
+                });
+
+                $(window).load(function() {
+                    $('.loadend').removeClass('active-loadend');
+                })
             }); 
            
         },
 
         /* INÍCIO FUNÇÃO LOADER*/
         ld: function () {
-           
+            require(['loader'], function () {
+                $(document).ready(function () {
+                    $.fakeLoader({
+                        spinner:"spinner1"
+                    });
+                });
+            });
         },
         /* FIM FUNÇÃO LOADER */
 

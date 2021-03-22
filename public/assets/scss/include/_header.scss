@@ -24,7 +24,15 @@ header {
 
     .menu-contact {
         border: 3px solid $white;
-        left: -5%;
+        left: -15%;
+
+        @include responsive($ms-large) {
+            left: -10%;
+        }
+
+        @include responsive($ms-x-large) {
+            left: -15%;   
+        }
 
         .line-menu {
             background-color:$white;
@@ -110,7 +118,15 @@ header {
         }
 
         &.act-pos-trigger {
-            right: -5%;
+            right: -15%;
+
+            @include responsive($ms-large) {
+                right: -10%;
+            }
+
+            @include responsive($ms-x-large) {
+                right: -15%;   
+            }
         }
 
     }
