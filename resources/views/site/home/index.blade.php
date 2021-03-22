@@ -6,7 +6,7 @@
 <body  data-modules="min/home">
 
     <div class="fakeLoader"></div>
-    <div class="loadend active-loadend"></div>
+    <div id="backload" class="loadend active-loadend"></div>
     @include('site.menu.index')
       <div id="block" class="video" data-vide-bg="assets/video/video_intro_creadedi" data-vide-options="position: 50% 50%"></div>
    

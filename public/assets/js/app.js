@@ -127,9 +127,10 @@ define(['jquery', 'bootstrap', 'modernizr'], function () {
                     $('.loadend').addClass('active-loadend');
                 });
 
-                $(window).load(function() {
+                
+                setTimeout(function() { 
                     $('.loadend').removeClass('active-loadend');
-                })
+                }, 1000);
             }); 
            
         },
