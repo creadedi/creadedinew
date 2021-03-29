@@ -26,6 +26,7 @@ body {
     overflow: hidden!important;
     margin: 0!important;
     padding: 0!important;
+    font-family: 'LatoBold';
 }
 
 header,
@@ -76,6 +77,21 @@ footer {
 
 .clear {
     clear: both!important;
+}
+
+.jobs {
+    font-weight: bold;
+    display: table;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'LatoBlack';
+    color: #000;
+    text-decoration: none;
+}
+
+.jobs:hover {
+    color: #000;
+    text-decoration: none;
 }
 
 header .container{
