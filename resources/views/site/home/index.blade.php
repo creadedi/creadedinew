@@ -6,7 +6,7 @@
 <body  data-modules="min/home">
 
     <div class="fakeLoader"></div>
-    <div class="loadend active-loadend"></div>
+    <div id="backload" class="loadend active-loadend"></div>
     @include('site.menu.index')
       <div id="block" class="video" data-vide-bg="assets/video/video_intro_creadedi" data-vide-options="position: 50% 50%"></div>
    
@@ -126,7 +126,7 @@
               </div>
               <div class="col-xs-12 col-md-5 engloba_services">
                 
-                    <h2>Alguns dos serviços <br>que eu sei fazer</h2>
+                    <h2>Coisas que <br>eu sei fazer</h2>
                     <ul>
                         <li class="item-serv"><a>Interface Design</a></li>
                         <li class="item-serv"><a>Brand Strategy</a></li>

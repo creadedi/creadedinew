@@ -13,6 +13,7 @@ body {
     @include transition(all $modal-duration $base-timing);
     @include transition-duration(1s);
     @include transition-timing-function(ease-out);
+    background-color:#E9E1E1!important;
     
     .loadend {
         width: 100%;
