@@ -64,7 +64,11 @@ footer {
 }
 
 .social-media {
-    justify-content: space-between!important;
+    justify-content: space-around!important;
+}
+
+.social-media img {
+    width: 30px;
 }
 
 .right {
