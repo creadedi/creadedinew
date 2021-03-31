@@ -141,23 +141,21 @@ h2.down {
 }
 
 #animation_container {
-    width: 680px!important;
-    height: 50%!important;
-    min-height: 50vh!important;
+    width: 750px!important;
+    height: 520px!important;
     position: relative;
     overflow: hidden!important;
     top: 14px;
-    left: -24px;
     border: 2px solid #000;
 }
 
 #canvas {
-    width: 1080px!important;
-    height: 569px!important;
+    width: 1090px!important;
+    height: 580px!important;
     position: relative;
     overflow: hidden!important;
     top: -60px;
-    left: -209px;
+    left: -170px;
 }
 
 #dom_overlay_container {
@@ -168,4 +166,34 @@ h2.down {
     margin: 0 auto;
     overflow: hidden!important;
     display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+    #animation_container {
+        width: 540px!important;
+        height: 370px!important;
+        top: 8px;
+    }
+    
+    #canvas {
+        width: 840px!important;
+        height: 450px!important;
+        top: -60px;
+        left: -160px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #animation_container {
+        width: 750px!important;
+        height: 520px!important;
+        top: 14px;
+    }
+    
+    #canvas {
+        width: 1090px!important;
+        height: 580px!important;
+        top: -60px;
+        left: -170px;
+    } 
 }
