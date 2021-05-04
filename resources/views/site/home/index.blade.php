@@ -48,9 +48,9 @@
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
                     <ol class="carousel-indicators">
-                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active">1</li>
-                      <li data-target="#carousel-example-generic" data-slide-to="1">2</li>
-                      <li data-target="#carousel-example-generic" data-slide-to="2">3</li>
+                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"><span class="number-nav">1</span><span class="line-nav"></span></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="1"><span class="number-nav">2</span><span class="line-nav"></span></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="2"><span class="line-nav"></span></span><span class="number-nav">3</span></li>
                     </ol>
 
                       <!-- Wrapper for slides -->

@@ -141,12 +141,51 @@
                 border: none!important;
                 background-color: $white;
                 margin:8px 0;
+                position: relative;
+
+                .number-nav {
+                    @include calc-rem(30px);
+                    text-indent: 0;
+                    display: none;
+                    position: relative;
+                    color: $white;
+                    font-weight: 500;
+                }
+
+                .line-nav {
+                    background-color:#ffffff;
+                }
+
+                .number-nav, 
+                .line-nav {
+                    display: none;
+                }
             }
 
             .active {
-                width: 12px!important;;
-                height: 12px!important;;
-                background-color: #ccc;
+                width: 12px!important;
+                height: 150px!important;
+                background-color: transparent;
+                @include display-flex();
+                @include align-items();
+                @include justify-content(space-between);
+                @include flex-direction(column);
+                margin:0!important;
+
+                .number-nav {
+                    width: 12px!important;
+                    height: 18px!important;
+                }
+ 
+                .line-nav {
+                    width: 1px;
+                    height: 120px;
+                }
+
+                .number-nav, 
+                .line-nav {
+                    display: block;
+                }
             }
         }
 
