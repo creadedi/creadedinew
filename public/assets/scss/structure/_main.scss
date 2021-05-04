@@ -122,8 +122,53 @@
         position: relative;
         z-index: 1;
 
-        .carousel-control {
+        .carousel-indicators {
+            height: 100%;
+            width: 20px;
+            min-height: 100vh;
+            left: 95% !important;
+            bottom: 0;
+            margin: 0!important;
+            @include display-flex();
+            @include align-items();
+            @include justify-content();
+            @include flex-direction(column);
+            margin-bottom: 0!important;
 
+            li {
+                width: 8px!important;
+                height: 8px!important;
+                border: none!important;
+                background-color: $white;
+                margin:8px 0;
+            }
+
+            .active {
+                width: 12px!important;;
+                height: 12px!important;;
+                background-color: #ccc;
+            }
+        }
+
+        .carousel-control {
+            top: 85%!important;
+            left: 0!important;
+
+            &.right,
+            &.left {
+                width: 60px; 
+                height: 60px;
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%)!important;
+                border:1px solid #ffffff;
+            }
+
+            &.right {
+                left: 119px!important;
+            }
+
+            &.left {
+                margin-left:60px!important;
+            }
         }
 
         .fundo_imagem_port {
